@@ -1,0 +1,49 @@
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\bin\Debug\FlatLoginWatermark.exe.config
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\bin\Debug\FlatLoginWatermark.exe
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\bin\Debug\FlatLoginWatermark.pdb
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\obj\Debug\ControlPatrimonial.csprojAssemblyReference.cache
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\obj\Debug\ControlPatrimonial.FormLogin.resources
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.Properties.Resources.resources
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\obj\Debug\ControlPatrimonial.csproj.GenerateResource.cache
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\obj\Debug\ControlPatrimonial.csproj.CoreCompileInputs.cache
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\obj\Debug\ControlPatrimonial.csproj.CopyComplete
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.exe
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.pdb
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\obj\Debug\ControlPatrimonial.csprojAssemblyReference.cache
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormLogin.resources
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.GenerateResource.cache
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.CoreCompileInputs.cache
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.CopyComplete
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\bin\Debug\PControlPatrimonial.exe.config
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\bin\Debug\PControlPatrimonial.exe
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\bin\Debug\PControlPatrimonial.pdb
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\obj\Debug\PControlPatrimonial.Properties.Resources.resources
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\obj\Debug\PControlPatrimonial.exe
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\PControlPatrimonial\obj\Debug\PControlPatrimonial.pdb
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\bin\Debug\PControlPatrimonial.exe.config
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\bin\Debug\PControlPatrimonial.exe
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\bin\Debug\PControlPatrimonial.pdb
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\obj\Debug\ControlPatrimonial.csprojAssemblyReference.cache
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormLogin.resources
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\obj\Debug\PControlPatrimonial.Properties.Resources.resources
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.GenerateResource.cache
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.CoreCompileInputs.cache
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.CopyComplete
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\obj\Debug\PControlPatrimonial.exe
+C:\Users\etson\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master - copia\PControlPatrimonial\obj\Debug\PControlPatrimonial.pdb
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\bin\Debug\PControlPatrimonial.exe.config
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\bin\Debug\PControlPatrimonial.exe
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\bin\Debug\PControlPatrimonial.pdb
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.csprojAssemblyReference.cache
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormLogin.resources
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\PControlPatrimonial.Properties.Resources.resources
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.GenerateResource.cache
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.CoreCompileInputs.cache
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.CopyComplete
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\PControlPatrimonial.exe
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\PControlPatrimonial.pdb
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormMenu.resources
