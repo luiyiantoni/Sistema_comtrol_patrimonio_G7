@@ -76,17 +76,17 @@ namespace ControlPatrimonial
 
         private void Calcular_Click(object sender, EventArgs e)
         {
-            //AbrirFormInPanel(new Form2());
+            AbrirFormInPanel(new FormAAmbientes());
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //AbrirFormInPanel(new Form3());
+            AbrirFormInPanel(new FormReportes());
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //AbrirFormInPanel(new Form1());
+            AbrirFormInPanel(new FormABienes());
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -96,7 +96,7 @@ namespace ControlPatrimonial
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //AbrirFormInPanel(new Form5());
+            AbrirFormInPanel(new FormAUsuarios());
         }
     }
 }

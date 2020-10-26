@@ -1,0 +1,79 @@
+SELECT * FROM Usuarios
+/* 
+    SELECT * FROM Usuarios
+    insert into usuarios ...
+    update 
+    delete 
+*/
+
+SELECT * FROM Ambientes
+/* 
+    SELECT * FROM Usuarios
+    insert into usuarios ...
+    update 
+    delete 
+*/
+
+SELECT * FROM Tipo
+/* 
+
+*/
+
+SELECT * FROM Bienes
+/* 
+    SELECT * FROM Usuarios
+    insert into usuarios ...
+    update 
+    delete 
+*/
+
+SELECT * FROM Computo WHERE Codigo = '004INF02015A'
+
+SELECT * FROM Muebles WHERE Codigo = '004INF02015A'
+
+
+SELECT * 
+FROM Bienes
+
+/*
+================ PESTANIA administrar BIENES
+-- BUSCAR 
+BOTON BUSCAR POR: >
+
+** PUERTA INGRESO DE REJAS **
+
+codigo: 004INF02015A
+Descripcion: PUERTA INGRESO DE REJAS
+Estado: Buen
+Color: Negro
+
+GUARDAR
+
+codigo = ''
+tipo: >
+ambiente: >
+
+[C,T,A]
+
+INGRESAR DATOS DEL BIEN
+
+GUARDAR
+
+INSERT EN MUEBLE
+INSERT [C,T,A] EN BIEN
+
+================ PESTANIA ADMINISTRAR AMBIENTES
+    -- SELECCIONAR AMBIENTE >
+    SELECT Codigo_Ambiente FROM Ambiente where Nombre = 'Aula-1'
+    -- MOSTRAR EN UNA TABLA LISTA DE LOS BIENES QUE PERTENECEN A ESE AMBIENTE
+    
+
+
+================ PESTANIA REPORTES
+    -- (ESTADO MAL, ESTADO BIEN, NRO MUEBLES, NRO COMPUTO, NRO TOTAL)
+          79         200           109           170         279
+
+*/
+
+SELECT Codigo_Ambientes FROM Ambientes where Nombre = 'Aula-1'
+select Codigo FROM Bienes where Codigo_Ambiente = 'IN-A1'

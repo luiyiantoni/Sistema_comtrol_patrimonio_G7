@@ -47,3 +47,7 @@ C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\Control
 C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\PControlPatrimonial.exe
 C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\PControlPatrimonial.pdb
 C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormMenu.resources
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormAUsuarios.resources
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormABienes.resources
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormReportes.resources
+C:\Users\etson\Desktop\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormAAmbientes.resources

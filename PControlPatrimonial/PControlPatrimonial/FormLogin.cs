@@ -79,8 +79,7 @@ namespace ControlPatrimonial
         }
 
         #endregion
-
-       
+  
         #region ConexionSQL
         public bool logins()
         {
@@ -90,7 +89,7 @@ namespace ControlPatrimonial
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT Usuario, Contraseña FROM Usuario WHERE Usuario='" + txtuser.Text + "' AND Contraseña='" + txtpass.Text + "'", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT Usuario, Contraseña FROM Usuarios WHERE Usuario='" + txtuser.Text + "' AND Contraseña='" + txtpass.Text + "'", conexion))
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
