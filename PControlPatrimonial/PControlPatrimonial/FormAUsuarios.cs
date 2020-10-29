@@ -90,7 +90,7 @@ namespace ControlPatrimonial
             if (editar)
             {
                 con.Conectar();
-                string consulta = "update Usuarios set Nombres='" + BoxNombres.Text + "',APaterno='" + BoxAPaterno.Text + "',AMaterno='" + BoxAMaterno.Text + "',DNI='" + BoxDNI.Text + "',Usuario='" + BoxUsuario.Text + "',Contraseña='" + BoxContraseña.Text + "'" + " where idUsuario='" + id + "'";
+                string consulta = "update Usuarios set Nombres='" + BoxNombres.Text + "',Apellido_Paterno='" + BoxAPaterno.Text + "',Apellido_Materno='" + BoxAMaterno.Text + "',DNI='" + BoxDNI.Text + "',Usuario='" + BoxUsuario.Text + "',Contraseña='" + BoxContraseña.Text + "'" + " where Codigo_Usuario='" + id + "'";
                 con.EjecutarSQL(consulta);
                 con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
                 inicializarCabecera();
@@ -101,7 +101,7 @@ namespace ControlPatrimonial
             else
             {
                 con.Conectar();
-                string consulta = "insert into Usuarios (Nombres,APaterno,AMaterno,DNI,Usuario,Contraseña) values ('" + BoxNombres.Text + "','" + BoxAPaterno.Text + "','" + BoxAMaterno.Text + "','" + BoxDNI.Text + "','" + BoxUsuario.Text + "','" + BoxContraseña.Text + "')";
+                string consulta = "insert into Usuarios (Nombres,Apellido_Paterno,Apellido_Materno,DNI,Usuario,Contraseña) values ('" + BoxNombres.Text + "','" + BoxAPaterno.Text + "','" + BoxAMaterno.Text + "','" + BoxDNI.Text + "','" + BoxUsuario.Text + "','" + BoxContraseña.Text + "')";
                 con.EjecutarSQL(consulta);
                 BoxNombres.Clear();
                 BoxAPaterno.Clear();
@@ -139,7 +139,7 @@ namespace ControlPatrimonial
             if (resultado == DialogResult.Yes)
             {
                 con.Conectar();
-                string consulta = "delete from Usuarios where idUsuario='"+id+"';";
+                string consulta = "delete from Usuarios where Codigo_Usuario='"+id+"';";
                 con.EjecutarSQL(consulta);
                 con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
                 inicializarCabecera();
