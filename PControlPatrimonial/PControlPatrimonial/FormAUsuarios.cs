@@ -17,12 +17,23 @@ namespace ControlPatrimonial
         int id;
         bool editar=false;
 
+        private void inicializarCabecera()
+        {
+            this.Grid1.Columns[0].HeaderText = "Id";
+            this.Grid1.Columns[1].HeaderText = "Nombres";
+            this.Grid1.Columns[2].HeaderText = "APaterno";
+            this.Grid1.Columns[3].HeaderText = "AMaterno";
+            this.Grid1.Columns[4].HeaderText = "DNI";
+            this.Grid1.Columns[5].HeaderText = "Usuario";
+            this.Grid1.Columns[6].HeaderText = "Contraseña";
+        }
         public FormAUsuarios()
         {
             InitializeComponent();
             //Grid1.DataSource = usr.MostrarUsuarios();
             con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
             checkBox.Checked = true;
+            inicializarCabecera();
         }
         private void label3_Click(object sender, EventArgs e)
         {
@@ -82,6 +93,7 @@ namespace ControlPatrimonial
                 string consulta = "update Usuarios set Nombres='" + BoxNombres.Text + "',APaterno='" + BoxAPaterno.Text + "',AMaterno='" + BoxAMaterno.Text + "',DNI='" + BoxDNI.Text + "',Usuario='" + BoxUsuario.Text + "',Contraseña='" + BoxContraseña.Text + "'" + " where idUsuario='" + id + "'";
                 con.EjecutarSQL(consulta);
                 con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
+                inicializarCabecera();
                 con.Desconectar();
                 editar = false;
                 checkBox.Checked = true;
@@ -98,6 +110,7 @@ namespace ControlPatrimonial
                 BoxUsuario.Clear();
                 BoxContraseña.Clear();
                 con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
+                inicializarCabecera();
                 con.Desconectar();
             }
         }
@@ -129,6 +142,7 @@ namespace ControlPatrimonial
                 string consulta = "delete from Usuarios where idUsuario='"+id+"';";
                 con.EjecutarSQL(consulta);
                 con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
+                inicializarCabecera();
                 con.Desconectar();
             }
             else 

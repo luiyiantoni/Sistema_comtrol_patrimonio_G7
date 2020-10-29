@@ -85,3 +85,20 @@ C:\UNSAAC 2020-I\METODOLOGIA\Sistema_comtrol_patrimonio_G7\PControlPatrimonial\P
 C:\UNSAAC 2020-I\METODOLOGIA\Sistema_comtrol_patrimonio_G7\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.CopyComplete
 C:\UNSAAC 2020-I\METODOLOGIA\Sistema_comtrol_patrimonio_G7\PControlPatrimonial\PControlPatrimonial\obj\Debug\PControlPatrimonial.exe
 C:\UNSAAC 2020-I\METODOLOGIA\Sistema_comtrol_patrimonio_G7\PControlPatrimonial\PControlPatrimonial\obj\Debug\PControlPatrimonial.pdb
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\bin\Debug\PControlPatrimonial.exe.config
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\bin\Debug\PControlPatrimonial.exe
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\bin\Debug\PControlPatrimonial.pdb
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.csprojAssemblyReference.cache
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormReportes.resources
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormAAmbientes.resources
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormABienes.resources
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormAUsuarios.resources
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormMenu.resources
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.FormLogin.resources
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\PControlPatrimonial.Properties.Resources.resources
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.GenerateResource.cache
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.CoreCompileInputs.cache
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\ControlPatrimonial.csproj.CopyComplete
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\PControlPatrimonial.exe
+C:\Users\etson\Documents\Visual Studio 2019\Sistema_comtrol_patrimonio_G7-main (1)\Sistema_comtrol_patrimonio_G7-main\PControlPatrimonial\PControlPatrimonial\obj\Debug\PControlPatrimonial.pdb

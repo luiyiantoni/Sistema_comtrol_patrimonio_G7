@@ -16,7 +16,7 @@ namespace ControlPatrimonial
 
         public void Conectar()
         {
-            con = new SqlConnection("Data Source=WIDMARO-SURFACE; Initial Catalog=ControlPatrimonial; Integrated Security=True");
+            con = new SqlConnection("Data Source=LAPTOP-F6BEM0H6; Initial Catalog=ControlPatrimonial; Integrated Security=True");
             con.Open();
         }
         public void Desconectar()
@@ -51,7 +51,36 @@ namespace ControlPatrimonial
             }
         }
 
-        public void ActualizarGrid(DataGridView dg, string consulta)
+        public bool VerificarExisteDatoSQL(String Consulta)
+        {
+            SqlCommand com = new SqlCommand(Consulta, con);
+            SqlDataReader dr = com.ExecuteReader();
+            if (dr.Read())
+                return true;
+            else
+                return false;     
+        }
+
+        public List<string> ObtenerValoresLista(String Consulta)
+        {
+            SqlCommand com = new SqlCommand(Consulta, con);
+            SqlDataReader dre = com.ExecuteReader();
+            List<string> resultado = new List<string>(dre.FieldCount);
+            if (dre.HasRows)
+            {
+                while (dre.Read())
+                {
+                    for (int j = 0; j < dre.FieldCount; j++)
+                    {
+                        resultado.Add(dre.GetSqlValue(j).ToString());
+                    }
+                    
+                }
+            }
+            return resultado;
+        }
+
+    public void ActualizarGrid(DataGridView dg, string consulta)
         {
             this.Conectar();
             System.Data.DataSet ds = new System.Data.DataSet();
@@ -59,9 +88,16 @@ namespace ControlPatrimonial
             da.Fill(ds, "Usuarios");
             dg.DataSource = ds;
             dg.DataMember = "Usuarios";
-            da.Fill(ds, "Ambientes");
+            this.Desconectar();
+        }
+        public void ActualizarGridBienes(DataGridView dg, string consulta)
+        {
+            this.Conectar();
+            System.Data.DataSet ds = new System.Data.DataSet();
+            SqlDataAdapter da = new SqlDataAdapter(consulta, con);
+            da.Fill(ds, "Bienes");
             dg.DataSource = ds;
-            dg.DataMember = "Ambientes";
+            dg.DataMember = "Bienes";
             this.Desconectar();
         }
 

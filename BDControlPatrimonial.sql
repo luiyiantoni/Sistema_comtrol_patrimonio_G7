@@ -27,7 +27,7 @@ create table Usuarios
     Apellido_Materno	  Varchar(30)   not null,
 	DNI         varchar(8) not null,
 	Usuario     varchar(15) not null,
-	Contrasenia   varchar(20) not null,
+	Contraseña   varchar(20) not null,
 
 	primary key(Codigo_Usuario) 
 )
@@ -802,8 +802,8 @@ SELECT
 	count(case when BR.Estado = 'BUEN' then BR.Estado else null end) as BUEN_ESTADO,
 	count(case when BR.Estado = 'REGULAR' then BR.Estado else null end) AS Estado_Regular,
 	count(case when BR.Estado = 'MAL' then BR.Estado else null end) as Mal_Estado,
-	count(case when BR.Codigo_Tipo = '1' then BR.Codigo_Tipo else null end) as Nro_Muebles,
-	count(case when BR.Codigo_Tipo = '2' then BR.Codigo_Tipo else null end) as Nro_Computo,
+	count(case when BR.Codigo_Tipo = '2' then BR.Codigo_Tipo else null end) as Nro_Muebles,
+	count(case when BR.Codigo_Tipo = '1' then BR.Codigo_Tipo else null end) as Nro_Computo,
 	count(BR.Codigo) as Nro_Bienes
 	FROM BResult BR
 END
