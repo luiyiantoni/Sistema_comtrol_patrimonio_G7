@@ -15,13 +15,14 @@ namespace ControlPatrimonial
     {
         Conexion con = new Conexion();
         int id;
-        bool editar=false;
+        bool editar = false;
+        string codigo_ambiente;
 
         public FormAAmbientes()
         {
             InitializeComponent();
             //Grid1.DataSource = usr.MostrarUsuarios();
-            con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
+            con.ActualizarGrid(this.Grid1, "Select A.Codigo_Ambientes, A.Nombre, A.Codigo_Usuario, U.Nombres, U.Apellido_Paterno, U.Apellido_Materno, count(B.Codigo) as Numero_De_Bienes from(Ambientes A left outer join Usuarios U on A.Codigo_Usuario = U.Codigo_Usuario) left outer join Bienes B on A.Codigo_Ambientes = B.Codigo_Ambiente group by A.Codigo_Ambientes, A.Nombre, A.Codigo_Usuario, U.Nombres, U.Apellido_Paterno, U.Apellido_Materno");
             checkBox.Checked = true;
         }
         private void label3_Click(object sender, EventArgs e)
@@ -31,7 +32,7 @@ namespace ControlPatrimonial
 
         private void BoxRespuesta_TextChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void BoxValorActual_TextChanged(object sender, EventArgs e)
@@ -79,25 +80,25 @@ namespace ControlPatrimonial
             if (editar)
             {
                 con.Conectar();
-                string consulta = "update Usuarios set Nombres='" + BoxNombres.Text + "',APaterno='" + BoxAPaterno.Text + "',AMaterno='" + BoxAMaterno.Text + "',DNI='" + BoxDNI.Text + "',Usuario='" + BoxUsuario.Text + "',Contraseña='" + BoxContraseña.Text + "'" + " where idUsuario='" + id + "'";
-                con.EjecutarSQL(consulta);
-                con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
+                string consulta1 = "update Ambientes set Codigo_Ambientes='" + BoxNombres.Text + "',Nombre='" + BoxAPaterno.Text + "',Codigo_Usuario='" + BoxAMaterno.Text + "' where Codigo_Ambientes ='" + codigo_ambiente + "'";
+                con.EjecutarSQL(consulta1);
+                string consulta2 = "update Bienes set Codigo_Ambientes='" + BoxNombres.Text + "' where Codigo_Ambientes ='" + codigo_ambiente + "'";
+                con.EjecutarSQL(consulta2);
+                con.ActualizarGrid(this.Grid1, "Select A.Codigo_Ambientes, A.Nombre, A.Codigo_Usuario, U.Nombres, U.Apellido_Paterno, U.Apellido_Materno, count(B.Codigo) as Numero_De_Bienes from(Ambientes A left outer join Usuarios U on A.Codigo_Usuario = U.Codigo_Usuario) left outer join Bienes B on A.Codigo_Ambientes = B.Codigo_Ambiente group by A.Codigo_Ambientes, A.Nombre, A.Codigo_Usuario, U.Nombres, U.Apellido_Paterno, U.Apellido_Materno");
                 con.Desconectar();
                 editar = false;
                 checkBox.Checked = true;
+
             }
             else
             {
                 con.Conectar();
-                string consulta = "insert into Usuarios (Nombres,APaterno,AMaterno,DNI,Usuario,Contraseña) values ('" + BoxNombres.Text + "','" + BoxAPaterno.Text + "','" + BoxAMaterno.Text + "','" + BoxDNI.Text + "','" + BoxUsuario.Text + "','" + BoxContraseña.Text + "')";
+                string consulta = "insert into Ambientes values ('" + BoxNombres.Text + "','" + BoxAPaterno.Text + "','" + BoxAMaterno.Text + "')";
                 con.EjecutarSQL(consulta);
                 BoxNombres.Clear();
                 BoxAPaterno.Clear();
                 BoxAMaterno.Clear();
-                BoxDNI.Clear();
-                BoxUsuario.Clear();
-                BoxContraseña.Clear();
-                con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
+                con.ActualizarGrid(this.Grid1, "Select A.Codigo_Ambientes, A.Nombre, A.Codigo_Usuario, U.Nombres, U.Apellido_Paterno, U.Apellido_Materno, count(B.Codigo) as Numero_De_Bienes from(Ambientes A left outer join Usuarios U on A.Codigo_Usuario = U.Codigo_Usuario) left outer join Bienes B on A.Codigo_Ambientes = B.Codigo_Ambiente group by A.Codigo_Ambientes, A.Nombre, A.Codigo_Usuario, U.Nombres, U.Apellido_Paterno, U.Apellido_Materno");
                 con.Desconectar();
             }
         }
@@ -106,32 +107,29 @@ namespace ControlPatrimonial
         {
             editar = true;
             checkBox.Checked = false;
-            id= int.Parse(this.Grid1.CurrentRow.Cells[0].Value.ToString());
+            id = int.Parse(this.Grid1.CurrentRow.Cells[0].Value.ToString());
             BoxNombres.Text = this.Grid1.CurrentRow.Cells[1].Value.ToString();
             BoxAPaterno.Text = this.Grid1.CurrentRow.Cells[2].Value.ToString();
             BoxAMaterno.Text = this.Grid1.CurrentRow.Cells[3].Value.ToString();
-            BoxDNI.Text = this.Grid1.CurrentRow.Cells[4].Value.ToString();
-            BoxUsuario.Text = this.Grid1.CurrentRow.Cells[5].Value.ToString();
-            BoxContraseña.Text = this.Grid1.CurrentRow.Cells[6].Value.ToString();
         }
 
         private void BoxBuscar_KeyUp(object sender, KeyEventArgs e)
         {
-            con.ActualizarGrid(this.Grid1, "select * from Usuarios where " + comboBox1.SelectedItem.ToString() + " like'" + BoxBuscar.Text + "%';");
+            string consulta = "select * from Bienes where Codigo_Ambiente = '" + BoxBuscar.Text + "'";
         }
         private void BtnEliminarUsuario_Click(object sender, EventArgs e)
         {
             id = int.Parse(this.Grid1.CurrentRow.Cells[0].Value.ToString());
-            var resultado = MessageBox.Show("¿Desea eliminar al usuario?","Confirme la eliminacion",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            var resultado = MessageBox.Show("¿Desea eliminar al usuario?", "Confirme la eliminacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (resultado == DialogResult.Yes)
             {
                 con.Conectar();
-                string consulta = "delete from Usuarios where idUsuario='"+id+"';";
+                string consulta = "delete from Usuarios where idUsuario='" + id + "';";
                 con.EjecutarSQL(consulta);
                 con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
                 con.Desconectar();
             }
-            else 
+            else
             {
                 return;
             }
@@ -145,14 +143,76 @@ namespace ControlPatrimonial
                 BoxNombres.Clear();
                 BoxAPaterno.Clear();
                 BoxAMaterno.Clear();
-                BoxDNI.Clear();
-                BoxUsuario.Clear();
-                BoxContraseña.Clear();
             }
-            else 
+            else
             {
                 editar = true;
             }
+        }
+
+        private void FormAAmbientes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            con.ActualizarGrid(this.Grid1, "Select * from Bienes where Codigo_Ambiente = '" + BoxBuscar.Text + "'");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            con.ActualizarGrid(this.Grid1, "Select A.Codigo_Ambientes, A.Nombre, A.Codigo_Usuario, U.Nombres, U.Apellido_Paterno, U.Apellido_Materno, count(B.Codigo) as Numero_De_Bienes from(Ambientes A left outer join Usuarios U on A.Codigo_Usuario = U.Codigo_Usuario) left outer join Bienes B on A.Codigo_Ambientes = B.Codigo_Ambiente group by A.Codigo_Ambientes, A.Nombre, A.Codigo_Usuario, U.Nombres, U.Apellido_Paterno, U.Apellido_Materno");
+        }
+
+        private void BoxAPaterno_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            editar = true;
+            checkBox.Checked = false;
+            codigo_ambiente = this.Grid1.CurrentRow.Cells[0].Value.ToString();
+            //id = int.Parse(this.Grid1.CurrentRow.Cells[0].Value.ToString());
+            BoxNombres.Text = this.Grid1.CurrentRow.Cells[0].Value.ToString();
+            BoxAPaterno.Text = this.Grid1.CurrentRow.Cells[1].Value.ToString();
+            BoxAMaterno.Text = this.Grid1.CurrentRow.Cells[2].Value.ToString();
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            con.Conectar();
+            string codigo = this.Grid1.CurrentRow.Cells[0].Value.ToString();
+            int nroBienes = 0;
+
+            nroBienes = Int32.Parse(this.Grid1.CurrentRow.Cells[6].Value.ToString());
+            if (nroBienes != 0)
+            {
+                var resultado = MessageBox.Show("En este ambiente existen bienes, En caso de eliminar el ambiente se eliminaran todos los bienes ¿Desea eliminar el ambiente?", "Confirme la eliminacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (resultado == DialogResult.Yes)
+                {
+                    string consulta = "delete from Bienes where Codigo_Ambiente = '" + codigo + "';";
+                    con.EjecutarSQL(consulta);
+                    string consulta1 = "delete from Ambientes where Codigo_Ambientes = '" + codigo + "'";
+                    con.EjecutarSQL(consulta1);
+                }
+                else 
+                {
+                
+                }
+            }
+            else
+            {
+                string consulta3 = "delete from Ambientes where Codigo_Ambientes = '" + codigo + "'";
+                con.EjecutarSQL(consulta3);
+            }
+            con.ActualizarGrid(this.Grid1, "Select A.Codigo_Ambientes, A.Nombre, A.Codigo_Usuario, U.Nombres, U.Apellido_Paterno, U.Apellido_Materno, count(B.Codigo) as Numero_De_Bienes from(Ambientes A left outer join Usuarios U on A.Codigo_Usuario = U.Codigo_Usuario) left outer join Bienes B on A.Codigo_Ambientes = B.Codigo_Ambiente group by A.Codigo_Ambientes, A.Nombre, A.Codigo_Usuario, U.Nombres, U.Apellido_Paterno, U.Apellido_Materno");
+            con.Desconectar();
+            editar = false;
+            checkBox.Checked = true;
         }
     }
 }

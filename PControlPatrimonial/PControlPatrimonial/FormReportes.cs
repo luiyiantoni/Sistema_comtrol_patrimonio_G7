@@ -21,8 +21,7 @@ namespace ControlPatrimonial
         {
             InitializeComponent();
             //Grid1.DataSource = usr.MostrarUsuarios();
-            con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
-            checkBox.Checked = true;
+            con.ActualizarGrid(this.Grid1, "exec reportes");
         }
         private void label3_Click(object sender, EventArgs e)
         {
@@ -72,87 +71,6 @@ namespace ControlPatrimonial
         private void BoxTasaInteres_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void GuardarUsuario(object sender, EventArgs e)
-        {
-            if (editar)
-            {
-                con.Conectar();
-                string consulta = "update Usuarios set Nombres='" + BoxNombres.Text + "',APaterno='" + BoxAPaterno.Text + "',AMaterno='" + BoxAMaterno.Text + "',DNI='" + BoxDNI.Text + "',Usuario='" + BoxUsuario.Text + "',Contraseña='" + BoxContraseña.Text + "'" + " where idUsuario='" + id + "'";
-                con.EjecutarSQL(consulta);
-                con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
-                con.Desconectar();
-                editar = false;
-                checkBox.Checked = true;
-            }
-            else
-            {
-                con.Conectar();
-                string consulta = "insert into Usuarios (Nombres,APaterno,AMaterno,DNI,Usuario,Contraseña) values ('" + BoxNombres.Text + "','" + BoxAPaterno.Text + "','" + BoxAMaterno.Text + "','" + BoxDNI.Text + "','" + BoxUsuario.Text + "','" + BoxContraseña.Text + "')";
-                con.EjecutarSQL(consulta);
-                BoxNombres.Clear();
-                BoxAPaterno.Clear();
-                BoxAMaterno.Clear();
-                BoxDNI.Clear();
-                BoxUsuario.Clear();
-                BoxContraseña.Clear();
-                con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
-                con.Desconectar();
-            }
-        }
-
-        private void BtnModificar_Click(object sender, EventArgs e)
-        {
-            editar = true;
-            checkBox.Checked = false;
-            id= int.Parse(this.Grid1.CurrentRow.Cells[0].Value.ToString());
-            BoxNombres.Text = this.Grid1.CurrentRow.Cells[1].Value.ToString();
-            BoxAPaterno.Text = this.Grid1.CurrentRow.Cells[2].Value.ToString();
-            BoxAMaterno.Text = this.Grid1.CurrentRow.Cells[3].Value.ToString();
-            BoxDNI.Text = this.Grid1.CurrentRow.Cells[4].Value.ToString();
-            BoxUsuario.Text = this.Grid1.CurrentRow.Cells[5].Value.ToString();
-            BoxContraseña.Text = this.Grid1.CurrentRow.Cells[6].Value.ToString();
-        }
-
-        private void BoxBuscar_KeyUp(object sender, KeyEventArgs e)
-        {
-            con.ActualizarGrid(this.Grid1, "select * from Usuarios where " + comboBox1.SelectedItem.ToString() + " like'" + BoxBuscar.Text + "%';");
-        }
-        private void BtnEliminarUsuario_Click(object sender, EventArgs e)
-        {
-            id = int.Parse(this.Grid1.CurrentRow.Cells[0].Value.ToString());
-            var resultado = MessageBox.Show("¿Desea eliminar al usuario?","Confirme la eliminacion",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-            if (resultado == DialogResult.Yes)
-            {
-                con.Conectar();
-                string consulta = "delete from Usuarios where idUsuario='"+id+"';";
-                con.EjecutarSQL(consulta);
-                con.ActualizarGrid(this.Grid1, "Select * from Usuarios");
-                con.Desconectar();
-            }
-            else 
-            {
-                return;
-            }
-        }
-
-        private void checkBox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox.Checked == true)
-            {
-                editar = false;
-                BoxNombres.Clear();
-                BoxAPaterno.Clear();
-                BoxAMaterno.Clear();
-                BoxDNI.Clear();
-                BoxUsuario.Clear();
-                BoxContraseña.Clear();
-            }
-            else 
-            {
-                editar = true;
-            }
         }
     }
 }
