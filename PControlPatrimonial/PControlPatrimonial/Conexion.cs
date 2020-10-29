@@ -16,7 +16,7 @@ namespace ControlPatrimonial
 
         public void Conectar()
         {
-            con = new SqlConnection("Data Source=LAPTOP-F6BEM0H6; Initial Catalog=ControlPatrimonial; Integrated Security=True");
+            con = new SqlConnection("Data Source=WIDMARO-SURFACE; Initial Catalog=ControlPatrimonial; Integrated Security=True");
             con.Open();
         }
         public void Desconectar()
@@ -59,6 +59,9 @@ namespace ControlPatrimonial
             da.Fill(ds, "Usuarios");
             dg.DataSource = ds;
             dg.DataMember = "Usuarios";
+            da.Fill(ds, "Ambientes");
+            dg.DataSource = ds;
+            dg.DataMember = "Ambientes";
             this.Desconectar();
         }
 

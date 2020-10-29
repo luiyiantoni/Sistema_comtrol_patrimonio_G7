@@ -89,7 +89,7 @@ namespace ControlPatrimonial
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT Usuario, Contraseña FROM Usuarios WHERE Usuario='" + txtuser.Text + "' AND Contraseña='" + txtpass.Text + "'", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT Usuario, Contrasenia FROM Usuarios WHERE Usuario='" + txtuser.Text + "' AND Contrasenia='" + txtpass.Text + "'", conexion))
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
