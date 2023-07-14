@@ -17,7 +17,7 @@
 
 - **Widmar Raul Quispe Leon** - _GitHub Account_ - [WidmarO](https://github.com/WidmarO)
 - **Etson Ronaldao Rojas Cahuana** - _GitHub Account_ - [Etson32](https://github.com/etson32)
-- **Luiyi Antony Quispe Palomino** - _GitHub Account_ - [Luiyi](https://github.com/blablabla115)
+- **Luiyi Antony Quispe Palomino** - _GitHub Account_ - [Luiyi](https://github.com/luiyiantoni)
 - **Rudy Rodrigo Rodriguez Hancco** - _GitHub Account_ - [RudyRRH](https://github.com/RudyRRH)
 - **Ronaldo Quispe Yahuira** - _GitHub Account_ - [Ronaldo](https://github.com/ronaldoQY)
 
